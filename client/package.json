@@ -1,10 +1,13 @@
 {
   "name": "mern-portfolio-client",
+  "homepage": "https://niteshjindal285.github.io/mern_portfolio_upgraded",
+  "postbuild": "shx cp build/index.html build/404.html",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
     "axios": "^1.4.0",
+    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
@@ -13,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "rmdir /S /Q ..\\deploy_build && npm run build && xcopy build ..\\deploy_build /E /I /Y",
+    "deploy": "cd ..\\deploy_build && git init && git checkout -B gh-pages && git add . && git commit -m \"Deploy\" && git remote add origin https://github.com/niteshjindal285/mern_portfolio_upgraded.git && git push origin gh-pages --force"
   },
   "browserslist": {
     "production": [
@@ -26,5 +31,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "shx": "^0.4.0"
   }
 }

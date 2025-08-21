@@ -4,6 +4,10 @@
   "homepage": "https://niteshjindal285.github.io/<your-repo-name>",
   "private": true,
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
@@ -19,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
+  "eslintConfig-disabled": {
     "extends": [
       "react-app",
       "react-app/jest"
@@ -36,5 +40,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "<<<<<<< HEAD\r Upgraded MERN portfolio project with glassmorphism, animations, and contact form backend.\r =======\r # MERN Portfolio Server (Upgraded)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niteshjindal285/mern_portfolio_upgraded.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/niteshjindal285/mern_portfolio_upgraded/issues"
   }
 }
