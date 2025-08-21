@@ -307,6 +307,13 @@ export default function App() {
               <i className="fas fa-external-link-alt"></i> Live / Repo
             </a>
           </article>
+          <article className="project glass">
+            <h3>Online-GroceryStore Website</h3>
+            <p>Tech used: React, CSS, Node, Mongo DB</p>
+            <a href="https://github.com/niteshjindal285/Online-GroceryStore.git" className="view">
+              <i className="fas fa-external-link-alt"></i> Live / Repo
+            </a>
+          </article>
         </div>
       </section>
 
