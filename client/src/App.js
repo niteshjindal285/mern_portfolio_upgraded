@@ -551,7 +551,7 @@ export default function App() {
                 <i className="fas fa-envelope"></i> Contact Us
               </button>
               <a
-                href={`${process.env.PUBLIC_URL}/pdfs/Nitesh_Jindal_Resume_Updated (1).pdf`}
+                href={`${process.env.PUBLIC_URL}/pdfs/Nitesh_Jindal_Resume_Updated.pdf`}
                 className="btn btn-resume"
                 target="_blank"
                 rel="noreferrer"
